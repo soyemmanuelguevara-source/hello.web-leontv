@@ -1,0 +1,696 @@
+<!DOCTYPE html>  
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEON TV STREAMING | Suscripciones de Streaming y Paquetes IPTV Premium</title>
+  <meta name="description" content="Renta y reventa de suscripciones de streaming (Netflix, HBO Max, Disney+, Prime Video y más) y paquetes de canales IPTV con deporte PPV en vivo. Full calidad, activación inmediata por WhatsApp y servicio 100% garantizado.">
+  <meta name="keywords" content="streaming premium, paquetes IPTV, Netflix HBO Max Disney+, suscripciones streaming, IPTV canales en vivo, deporte PPV streaming, Leon TV Streaming, activación inmediata streaming, streaming full calidad">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="LEON TV STREAMING | Suscripciones de Streaming y Paquetes IPTV Premium">
+  <meta property="og:description" content="Todo tu entretenimiento en un solo lugar: streaming premium, canales IPTV y deporte PPV en vivo. Activación inmediata por WhatsApp.">
+  <meta property="og:image" content="imagenes/logo.png">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta name="theme-color" content="#0A0A0A">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="imagenes/logo-nobg.png">
+  <link rel="apple-touch-icon" href="imagenes/logo-nobg.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADER
+  ══════════════════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-curtain loader-curtain-l"></div>
+    <div class="loader-curtain loader-curtain-r"></div>
+    <div class="loader-flash"></div>
+    <div class="loader-content">
+      <div class="loader-logo-wrap">
+        <div class="loader-ring"></div>
+        <img class="loader-logo" src="imagenes/logo-nobg.png" alt="">
+      </div>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+      <span class="loader-text">Cargando<span class="loader-dots"><span>.</span><span>.</span><span>.</span></span></span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="LEON TV STREAMING — inicio">
+          <img class="nav-logo-img" src="imagenes/logo-nobg.png" alt="LEON TV STREAMING — suscripciones de streaming y paquetes IPTV">
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#why">Beneficios</a></li>
+            <li><a href="#ambientes">Plataformas</a></li>
+            <li><a href="#proceso">Cómo funciona</a></li>
+            <li><a href="#producto">Catálogo</a></li>
+            <li><a href="#sectores">Dispositivos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="https://wa.me/528119109538?text=Hola%2C%20quiero%20informacion%20sobre%20los%20paquetes%20de%20streaming%20e%20IPTV%20de%20LEON%20TV%20STREAMING."
+           target="_blank" rel="noopener noreferrer" class="btn-gold nav-cta">
+          <i class="fa-brands fa-whatsapp"></i>
+          Activar ahora
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mob-menu" aria-label="Menú móvil">
+      <a href="#why">Beneficios</a>
+      <a href="#ambientes">Plataformas</a>
+      <a href="#proceso">Cómo funciona</a>
+      <a href="#producto">Catálogo</a>
+      <a href="#sectores">Dispositivos</a>
+      <a href="#contacto">Contacto</a>
+      <a href="https://wa.me/528119109538?text=Hola%2C%20quiero%20informacion%20sobre%20los%20paquetes%20de%20streaming%20e%20IPTV%20de%20LEON%20TV%20STREAMING." target="_blank" rel="noopener noreferrer">Activar por WhatsApp →</a>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <!-- Parallax background image -->
+      <div class="hero-bg" aria-hidden="true"></div>
+      <!-- Dark overlays -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <!-- Grid texture -->
+      <div class="hero-grid" aria-hidden="true"></div>
+      <!-- Canvas particle constellation -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Light shafts -->
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <!-- Film grain overlay -->
+      <div class="hero-grain" aria-hidden="true"></div>
+      <!-- One-shot scan reveal -->
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <!-- Live badge -->
+          <div class="hero-badge" aria-hidden="true">
+            <div class="badge-dot"></div>
+            Streaming Premium &amp; IPTV · Activación inmediata por WhatsApp
+          </div>
+
+          <!-- Animated title -->
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Todo el entretenimiento premium,</span></span>
+            <span class="line"><span class="accent" id="hero-type" data-full="sin límites ni complicaciones.">sin límites ni complicaciones.</span><span class="hero-cursor" aria-hidden="true">|</span></span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-sub">
+            Suscripciones de <strong>streaming</strong> y paquetes de <strong>canales IPTV</strong>: Netflix, HBO Max, Disney+, deporte PPV en vivo y mucho más, en un solo lugar. Full calidad, activación inmediata y servicio totalmente garantizado.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-ctas">
+            <a href="https://wa.me/528119109538?text=Hola%2C%20vi%20la%20pagina%20de%20LEON%20TV%20STREAMING%20y%20quiero%20activar%20mi%20suscripcion.%20Me%20pueden%20ayudar%20con%20la%20informacion%3F"
+               target="_blank" rel="noopener noreferrer" class="btn-gold">
+              <i class="fa-brands fa-whatsapp"></i>
+              Activar mi suscripción
+            </a>
+            <a href="#ambientes" class="btn-outline">
+              <i class="fa-solid fa-layer-group" style="font-size:14px; color:var(--gold);"></i>
+              Ver plataformas y canales
+            </a>
+          </div>
+
+          <!-- Trust bar -->
+          <div class="hero-trust" aria-label="Beneficios clave">
+            <div class="trust-item">
+              <i class="fa-solid fa-shield-halved"></i>
+              Servicio 100% garantizado
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-bolt"></i>
+              Activación inmediata
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-trophy"></i>
+              Deporte PPV incluido
+            </div>
+          </div>
+
+        </div><!-- /.hero-content -->
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE
+    ══════════════════════════════════════════════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         WHY — Por qué elegirnos
+    ══════════════════════════════════════════════════ -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="container">
+
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">Por qué elegirnos</div>
+            <h2 class="why-quote section-title" id="why-heading">
+              La diferencia entre un servicio más<br>
+              <span class="gold">y una experiencia sin fallas.</span>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            Un solo proveedor, todo tu entretenimiento: streaming internacional, canales IPTV y deporte en vivo, con atención rápida y cordial en cada paquete.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true"><i class="fa-solid fa-layer-group"></i></div>
+            <h3>Todo en un solo lugar</h3>
+            <p>Más de 30 plataformas de streaming y paquetes de canales IPTV en una sola cuenta, sin batallar con varias suscripciones.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Full calidad garantizada</h3>
+            <p>Servicio totalmente garantizado, con actualización constante de contenido para que nunca te quedes sin ver lo último.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true"><i class="fa-solid fa-trophy"></i></div>
+            <h3>Deporte y PPV incluido</h3>
+            <p>Todo el deporte de pago por evento incluido, además de canales nacionales e internacionales en vivo para toda la familia.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></div>
+            <h3>Activación por WhatsApp</h3>
+            <p>Contrátanos directo por WhatsApp: atención rápida y cordial, sin filas ni trámites complicados.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         AMBIENTES — Catálogo
+    ══════════════════════════════════════════════════ -->
+    <section id="ambientes" aria-labelledby="ambientes-heading">
+      <div class="container">
+
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Nuestro catálogo</div>
+            <h2 class="section-title" id="ambientes-heading">
+              Un catálogo pensado <span class="gold">para cada gusto.</span>
+            </h2>
+          </div>
+          <div class="ambiente-pill reveal d1">
+            <i class="fa-solid fa-layer-group" style="margin-right:8px;" aria-hidden="true"></i>+31 plataformas y canales
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+
+          <div class="amb-card reveal">
+            <div class="amb-icon-wrap" aria-hidden="true"><i class="fa-solid fa-clapperboard"></i></div>
+            <h3>Streaming Premium</h3>
+            <p>Las plataformas de series, películas y música más populares del momento, listas para disfrutar cuando quieras.</p>
+            <div class="amb-badges">
+              <span class="mini-chip">Netflix</span>
+              <span class="mini-chip">HBO Max</span>
+              <span class="mini-chip">Disney+</span>
+              <span class="mini-chip">Prime Video</span>
+              <span class="mini-chip">Paramount+</span>
+              <span class="mini-chip">Apple TV+</span>
+              <span class="mini-chip">ViX+</span>
+              <span class="mini-chip">Star+</span>
+              <span class="mini-chip more">+4 más</span>
+            </div>
+            <div class="amb-temp">12 plataformas de streaming</div>
+          </div>
+
+          <div class="amb-card reveal d1">
+            <div class="amb-icon-wrap" aria-hidden="true"><i class="fa-solid fa-satellite-dish"></i></div>
+            <h3>IPTV &amp; Deportes en vivo</h3>
+            <p>Canales nacionales e internacionales, series y películas de estreno, con todo el deporte de PPV incluido.</p>
+            <div class="amb-badges">
+              <span class="mini-chip">LegazyTV</span>
+              <span class="mini-chip">RQTV</span>
+              <span class="mini-chip">LAM-TV</span>
+              <span class="mini-chip">BudTV Ultra</span>
+              <span class="mini-chip">MiTV</span>
+              <span class="mini-chip">SoloTV</span>
+              <span class="mini-chip">Sky Soccer Plus MX</span>
+              <span class="mini-chip more">+5 más</span>
+            </div>
+            <div class="amb-temp">12 paquetes de canales</div>
+          </div>
+
+          <div class="amb-card reveal d2">
+            <div class="amb-icon-wrap" aria-hidden="true"><i class="fa-solid fa-star"></i></div>
+            <h3>Extras &amp; Productividad</h3>
+            <p>Herramientas de productividad, gaming y entretenimiento extra para sacarle más provecho a tu suscripción.</p>
+            <div class="amb-badges">
+              <span class="mini-chip">Xbox Game Pass</span>
+              <span class="mini-chip">NBA League Pass</span>
+              <span class="mini-chip">Viki Rakuten</span>
+              <span class="mini-chip">Canva Pro</span>
+              <span class="mini-chip">Gaia</span>
+              <span class="mini-chip">Bixi</span>
+              <span class="mini-chip">ChatGPT Plus</span>
+            </div>
+            <div class="amb-temp">7 apps adicionales</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROCESO — Cómo funciona
+    ══════════════════════════════════════════════════ -->
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <div class="section-bg-fixed" style="--bg-img:url('https://images.unsplash.com/photo-1478147427282-58a87a120781?q=80&amp;w=1800&amp;auto=format&amp;fit=crop')" aria-hidden="true"></div>
+      <div class="section-bg-overlay" aria-hidden="true"></div>
+      <canvas class="section-particles" data-particles="20" aria-hidden="true"></canvas>
+
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Cómo funciona</div>
+          <h2 class="section-title" id="proceso-heading">
+            Actívalo en 3 pasos, <span class="gold">así de fácil.</span>
+          </h2>
+          <p>Del primer mensaje a tu cuenta activa, todo por WhatsApp.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3><i class="fa-brands fa-whatsapp" style="color:#25d366;"></i>&nbsp;Escríbenos por WhatsApp</h3>
+            <p>Cuéntanos qué plataformas o paquete de canales te interesan y te cotizamos al instante, sin compromiso.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3><i class="fa-solid fa-list-check" style="color:var(--gold);"></i>&nbsp;Elige tu combo ideal</h3>
+            <p>Arma tu paquete de streaming e IPTV a tu medida — revisa el catálogo completo y elige lo que más te convenga.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3><i class="fa-solid fa-circle-play" style="color:var(--gold);"></i>&nbsp;Actívalo y disfruta</h3>
+            <p>Recibe tus accesos y disfrútalos en Apple TV, Fire TV Stick, Android, Smart TV o Roku — full calidad garantizada.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PRODUCTO — Catálogo completo
+    ══════════════════════════════════════════════════ -->
+    <section id="producto" aria-labelledby="producto-heading">
+      <div class="container">
+        <div class="producto-wrap">
+
+          <div class="reveal">
+            <div class="label">Catálogo completo</div>
+            <h2 class="section-title" id="producto-heading">
+              Un solo panel, <span class="gold">todo tu entretenimiento.</span>
+            </h2>
+            <p class="producto-lead">
+              Streaming internacional y canales IPTV en un mismo lugar: elige tus plataformas favoritas, agrega tu paquete de canales en vivo y disfruta todo en la máxima calidad disponible.
+            </p>
+
+            <div class="feature-rows">
+              <div class="f-row">
+                <div class="f-row-icon"><i class="fa-solid fa-trophy"></i></div>
+                <div>
+                  <h4>PPV y deportes en vivo</h4>
+                  <p>Todo el deporte de pago por evento incluido, además de canales nacionales e internacionales.</p>
+                </div>
+              </div>
+              <div class="f-row">
+                <div class="f-row-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+                <div>
+                  <h4>Actualización constante</h4>
+                  <p>Catálogo y canales siempre al día, con los estrenos y series más recientes disponibles.</p>
+                </div>
+              </div>
+              <div class="f-row">
+                <div class="f-row-icon"><i class="fa-solid fa-people-roof"></i></div>
+                <div>
+                  <h4>Contenido para toda la familia</h4>
+                  <p>Series, películas y canales para que todos en casa encuentren algo qué ver.</p>
+                </div>
+              </div>
+              <div class="f-row">
+                <div class="f-row-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div>
+                  <h4>Servicio 100% garantizado</h4>
+                  <p>Full calidad garantizada en cada cuenta y paquete que activas con nosotros.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="specs-bar">
+              <div class="spec-cell"><span class="spec-val">31+</span><span class="spec-name">Plataformas y canales</span></div>
+              <div class="spec-cell"><span class="spec-val">12</span><span class="spec-name">Paquetes IPTV</span></div>
+              <div class="spec-cell"><span class="spec-val">6</span><span class="spec-name">Dispositivos</span></div>
+              <div class="spec-cell"><span class="spec-val">100%</span><span class="spec-name">Garantizado</span></div>
+            </div>
+          </div>
+
+          <div class="panel-scene reveal d2" aria-hidden="true">
+            <div class="tv-mockup">
+              <div class="tv-mockup-bar"><span></span><span></span><span></span></div>
+              <div class="app-grid">
+                <div class="app-chip" style="--c:#E50914">Netflix</div>
+                <div class="app-chip" style="--c:#7B2FF7">HBO Max</div>
+                <div class="app-chip" style="--c:#113CCF">Disney+</div>
+                <div class="app-chip" style="--c:#00A8E1">Prime Video</div>
+                <div class="app-chip" style="--c:#E5E5E5">Apple TV+</div>
+                <div class="app-chip" style="--c:#1DB954">Spotify</div>
+                <div class="app-chip" style="--c:#FF0000">YouTube Premium</div>
+                <div class="app-chip" style="--c:#0064FF">Paramount+</div>
+                <div class="app-chip" style="--c:#FF4500">ViX+</div>
+              </div>
+            </div>
+            <div class="p-badge pb-tl"><span class="p-badge-dot"></span>Catálogo actualizado</div>
+            <div class="p-badge pb-br"><span class="p-badge-dot"></span>Soporte activo</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         STATS
+    ══════════════════════════════════════════════════ -->
+    <section id="stats" aria-label="Cifras de LEON TV STREAMING">
+      <div class="section-bg-fixed" style="--bg-img:url('https://images.unsplash.com/photo-1717915604557-94283edbcc1b?q=80&amp;w=1800&amp;auto=format&amp;fit=crop&amp;flip=h')" aria-hidden="true"></div>
+      <div class="section-bg-overlay" aria-hidden="true"></div>
+      <canvas class="section-particles" data-particles="22" aria-hidden="true"></canvas>
+
+      <div class="container">
+        <div class="stats-hdr reveal">
+          <div class="label">Nuestro alcance</div>
+          <h2 class="section-title">Números que hablan por <span class="gold">nosotros.</span></h2>
+          <p>Un catálogo amplio, compatible con tus dispositivos y respaldado por garantía total.</p>
+        </div>
+
+        <div class="stats-grid reveal" role="list">
+
+          <div class="stat-cell" role="listitem">
+            <i class="fa-solid fa-layer-group stat-icon" aria-hidden="true"></i>
+            <div class="stat-num" data-count="31" data-suffix="" aria-label="31">0</div>
+            <div class="stat-lbl">Plataformas y canales<br>disponibles</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <i class="fa-solid fa-satellite-dish stat-icon" aria-hidden="true"></i>
+            <div class="stat-num" data-count="12" data-suffix="" aria-label="12">0</div>
+            <div class="stat-lbl">Paquetes de<br>canales IPTV</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <i class="fa-solid fa-mobile-screen-button stat-icon" aria-hidden="true"></i>
+            <div class="stat-num" data-count="6" data-suffix="" aria-label="6">0</div>
+            <div class="stat-lbl">Dispositivos<br>compatibles</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <i class="fa-solid fa-shield-halved stat-icon" aria-hidden="true"></i>
+            <div class="stat-num" data-count="100" data-suffix="%" aria-label="100 por ciento">0</div>
+            <div class="stat-lbl">Servicio<br>garantizado</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SECTORES — Dispositivos compatibles
+    ══════════════════════════════════════════════════ -->
+    <section id="sectores" aria-labelledby="sectores-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">Compatibilidad total</div>
+          <h2 class="section-title" id="sectores-heading">
+            Disponible en todos tus <span class="gold">dispositivos.</span>
+          </h2>
+          <p>Actívalo en el aparato que ya tienes en casa, sin comprar equipo adicional.</p>
+        </div>
+
+        <div class="sectores-grid">
+          <div class="sector-card reveal">
+            <i class="fa-brands fa-apple sector-icon" aria-hidden="true"></i>
+            <h3>Apple TV</h3>
+          </div>
+          <div class="sector-card reveal d1">
+            <i class="fa-solid fa-fire sector-icon" aria-hidden="true"></i>
+            <h3>Fire TV Stick</h3>
+          </div>
+          <div class="sector-card reveal d2">
+            <i class="fa-brands fa-android sector-icon" aria-hidden="true"></i>
+            <h3>Android</h3>
+          </div>
+          <div class="sector-card reveal d3">
+            <i class="fa-solid fa-box sector-icon" aria-hidden="true"></i>
+            <h3>Android TV Box</h3>
+          </div>
+          <div class="sector-card reveal">
+            <i class="fa-solid fa-tv sector-icon" aria-hidden="true"></i>
+            <h3>LG Smart TV</h3>
+          </div>
+          <div class="sector-card reveal d1">
+            <i class="fa-solid fa-satellite-dish sector-icon" aria-hidden="true"></i>
+            <h3>Roku</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════════════ -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="section-bg-fixed" style="--bg-img:url('https://images.unsplash.com/photo-1478147427282-58a87a120781?q=80&amp;w=1800&amp;auto=format&amp;fit=crop&amp;flip=h')" aria-hidden="true"></div>
+      <div class="section-bg-overlay" aria-hidden="true"></div>
+      <canvas class="section-particles" data-particles="20" aria-hidden="true"></canvas>
+
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Activa tu cuenta <span class="gold">hoy mismo.</span>
+          </h2>
+          <p>Escríbenos por WhatsApp y recibe atención rápida y cordial — respuesta inmediata.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <!-- Info panel -->
+          <div class="contact-info">
+            <h3>Atención directa y personalizada</h3>
+            <p class="ci-sub">Todo el catálogo de streaming e IPTV de LEON TV STREAMING, a un mensaje de distancia.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p>Escríbenos y cotizamos tu paquete al instante.</p>
+                  <a href="https://wa.me/528119109538?text=Hola%2C%20quiero%20cotizar%20un%20paquete%20de%20streaming%20o%20IPTV%20con%20LEON%20TV%20STREAMING." target="_blank"
+                     rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir chat →
+                  </a>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true"><i class="fa-brands fa-instagram"></i></div>
+                <div class="ci-body">
+                  <h4>Instagram</h4>
+                  <p>Síguenos para promociones y contenido nuevo.</p>
+                  <a href="https://www.instagram.com/leontvstreaming" target="_blank"
+                     rel="noopener noreferrer" class="ci-wa-link">
+                    @leontvstreaming →
+                  </a>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true"><i class="fa-solid fa-book-open"></i></div>
+                <div class="ci-body">
+                  <h4>Catálogo completo</h4>
+                  <p>Consulta todas las plataformas y paquetes disponibles.</p>
+                  <a href="https://leon-tv-streaming.glide.page/dl/375e23" target="_blank"
+                     rel="noopener noreferrer" class="ci-wa-link">
+                    Ver catálogo →
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div><!-- /.contact-info -->
+
+          <!-- Form -->
+          <div class="contact-form-wrap">
+            <h3>Solicita tu paquete</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Ej. Juan Pérez" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">¿Qué te interesa?</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Cotización general</option>
+                    <option>Streaming Premium (Netflix, HBO Max, Disney+…)</option>
+                    <option>IPTV &amp; Canales en vivo</option>
+                    <option>Combo Streaming + IPTV</option>
+                    <option>Extras y productividad</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">¿Qué plataformas o canales buscas?</label>
+                <textarea id="f-msg" class="form-control" rows="4"
+                          placeholder="Cuéntanos qué te interesa activar…"></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Enviar por WhatsApp
+              </button>
+              <p class="form-note">
+                Al enviar serás redirigido a WhatsApp para continuar la conversación con nosotros.
+              </p>
+            </form>
+          </div>
+
+        </div><!-- /.contact-box -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+
+        <div class="footer-col footer-col-brand">
+          <div class="footer-logo"><img src="imagenes/logo-nobg.png" alt="LEON TV STREAMING"></div>
+          <p class="footer-tagline">Streaming premium y canales IPTV en un solo lugar. Full calidad, activación inmediata y servicio totalmente garantizado.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <a href="#why">Beneficios</a>
+          <a href="#ambientes">Plataformas</a>
+          <a href="#proceso">Cómo funciona</a>
+          <a href="#producto">Catálogo</a>
+          <a href="#sectores">Dispositivos</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <a href="https://wa.me/528119109538?text=Hola%2C%20quiero%20informacion%20sobre%20los%20paquetes%20de%20streaming%20e%20IPTV%20de%20LEON%20TV%20STREAMING." target="_blank" rel="noopener noreferrer">WhatsApp: 811 910 9538</a>
+          <a href="https://www.instagram.com/leontvstreaming" target="_blank" rel="noopener noreferrer">Instagram @leontvstreaming</a>
+          <a href="https://leon-tv-streaming.glide.page/dl/375e23" target="_blank" rel="noopener noreferrer">Ver catálogo completo</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy; <span id="year"></span> LEON TV STREAMING. Todos los derechos reservados.
+        </p>
+        <div class="footer-socials">
+          <a href="https://wa.me/528119109538?text=Hola%2C%20vi%20su%20pagina%20web%20y%20me%20gustaria%20mas%20informacion%20sobre%20sus%20paquetes%20de%20streaming%20e%20IPTV."
+             target="_blank" rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="https://www.instagram.com/leontvstreaming"
+             target="_blank" rel="noopener noreferrer" class="footer-soc" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       FLOATING WHATSAPP
+  ══════════════════════════════════════════════════════ -->
+  <a href="https://wa.me/528119109538?text=Hola%2C%20vi%20su%20pagina%20web%20y%20me%20gustaria%20mas%20informacion%20sobre%20sus%20paquetes%20de%20streaming%20e%20IPTV."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
